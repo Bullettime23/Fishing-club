@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "v_CCMeanwhile"; 
+    src: url("../assets/Fonts/Meanwhile.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+body {
+    width: 1100px;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d877c;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 105px;
+    top: 5px;
+}
+
+h1 {
+    font-family: "v_CCMeanwhile";
+    font-size: 60px;
+    color: rgb(130, 115, 108);
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+      
+}
+
+p {
+    font-size: 18px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: rgb(157, 135, 124);
+    line-height: 1.2;
+    text-align: left;      
+}
+
+.nav {
+    display: flex;
+    font-size: 24px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: rgb(232, 239, 250);
+    line-height: 1.2;
+    text-align: left;      
+}
+
+.nav h4 {
+    margin-right: 30px;
+    font-weight: 300;
+}
+
+.nav h4:last-child {
+    margin: 0;
+}
+
+main {
+    height: 1600px;
+    background-image: url(../assets/images/background.png);
+    background-repeat: no-repeat;
+    padding: 0 85px;
+}
+
+.top-wrapper {
+    padding-top: 65px;
+    padding-left: 64%;
+}
+
+.top-wrapper h1 {
+    margin-bottom: 45px;
+}
+
+.top-wrapper .info {
+    margin-left: 84px;
+}
+
+.top-wrapper .info span {
+    padding-right: 30px;
+}
+
+.middle-wrapper {
+    margin-top: 205px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column h1 {
+    margin-bottom: 45px;
+}
+
+.left-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.left-column img {
+    padding-bottom: 44px;
+}
+
+.left-column p {
+    width: 80%
+}
+
+.right-column {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column p {
+    width: 50%;
+    padding-bottom: 45px;
+    align-self: end;
+}
+
+.right-column img {
+    border-bottom: solid #9d877c 3px;
+}
+
+.right-column h3 {
+    align-self: center;
+    padding-top: 10px;
+}
+
+.fish-size {
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "Arial Narrow", Italic, sans-serif;
+    color: rgb(157, 135, 124);
+    line-height: 1.2;
+    text-align: left;      
+}
+
+.bottom-wrapper {
+    margin-top: 100px;
+    position: relative;    
+}
+
+.bottom-wrapper * {
+    color: #665952;
+}
+
+.bottom-wrapper p {
+    margin-top: 30px;
+    width: 18%;
+}
+
+.food-wrapper {
+    position: absolute;
+    left: 20%;
+    top: 77%;
+    height: 200px;
+    width: 200px;
+}
+
+.food-wrapper img, .food-wrapper p {
+    position: absolute
+}
+
+.sard {
+    bottom: 106px;
+    right: 100px;
+}
+
+.sard-text {
+    top: 53px;
+    right: 226px;
+}
+
+.anch {    
+    bottom: 91px;
+    left: 147px;
+}
+
+.anch-text {
+    left: 252px;
+    top: 74px;
+}
+
+.scumb {
+    bottom: 4px;
+    left: 59px;
+}
+
+.scumb-text {
+    top: 151px;
+    left: 170px;
+}
+
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 89%;
+    width: 100%;
+    height: 218px;
+    background-image: url("../assets/images/footer-bg.png");
+}
+
+footer h4 {
+    color: #e6eefa;
+    font-size: 24px;
+    font-family: "Arial Narrow", Italic, sans-serif;
+    font-weight: 300;
+}
+  
+
+footer p {
+    color: #c1cbdc;
+}
+footer {
+    display: flex;
+}
+
+.footer-left-wrapper {
+    display: flex;
+    align-self: center;
+}
+
+.footer-left-wrapper p {
+    padding-left: 20px;
+}
+
+.footer-mid-wrapper {
+    display: flex;
+    align-self: end;
+}
+
+.footer-mid-wrapper div {
+    padding-right: 20px;
+    text-align: center;
+    padding-bottom: 27px;
+}
+
+.footer-mid-wrapper div:last-child {
+    padding-left: 0;
+}
+
+.footer-right-wrapper {
+    display: flex;
+    align-self: end;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+.socials {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials svg:first-child {
+    padding-right: 16px;
+}
