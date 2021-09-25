@@ -324,3 +324,54 @@ footer {
 .gallery-left-col img:nth-child(n+2), .gallery-right-col img:nth-child(n+2) {
     padding-top: 26px;
 }
+
+/* Areal styles*/
+
+.areal-main {
+    background-image: url("../assets/images/areal/areal-bg.png");
+}
+
+.areal-top {
+    padding-top: 75px;
+}
+
+.areal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.areal-left-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.areal-left-col p {
+    padding-top: 20px;
+}
+
+.areal-bottom-wrapper {
+    position: relative;
+}
+
+.areal-bottom-wrapper img {
+    position: absolute;
+}
+
+img.areal-first, img.areal-third {
+    top: 89px;
+}
+
+img.areal-first {
+    left: 0;
+}
+
+img.areal-second {
+    z-index: 1;
+    top: 50px;
+    left: calc(50% - 447px/2)
+}
+
+img.areal-third {
+    right: 0;
+}
