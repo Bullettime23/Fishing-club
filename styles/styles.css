@@ -55,14 +55,14 @@ p {
 }
 
 
-h4 > a {
+h4 a {
     color: rgb(232, 239, 250); /* Цвет ссылок */
     text-decoration: none;
 }
-h4 > a:visited {
+h4 a:visited {
     color: #cecece; /* Цвет посещенных ссылок */
 }
-h4 > a:active {
+h4 a:active {
     color: #ffff00; /* Цвет активных ссылок */
 }
 
