@@ -22,6 +22,13 @@ body {
 
 a {
     text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+a:hover, a:hover *  {
+    color: #97cceb !important;
+    text-shadow: 2px 0 0 #97cceb;
+    transition-duration: 0.5s;
 }
 
 header {
@@ -232,7 +239,7 @@ footer {
     justify-content: space-around;
     top: 89%;
     width: 100%;
-    height: 218px;
+    height: 217px;
     background-image: url("../assets/images/footer-bg.png");
 }
 
@@ -333,17 +340,37 @@ footer {
 
 .areal-top {
     padding-top: 75px;
+    justify-content: space-between;
 }
 
 .areal-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+}
+
+.areal-mid {
+    display: flex;
+    margin-top: 100px;
+    position: relative;
+}
+
+.sail-fish-image {
+    position: absolute;
+    top: 71px;
+    left: -76px;
+}
+
+.areal-mid .areal-left-col {
+    align-self: flex-start;
 }
 
 .areal-left-col {
     display: flex;
     flex-direction: column;
+    width: 360px;
+}
+
+.middle-left-areal {
+    width: 320px;
 }
 
 .areal-left-col p {
@@ -377,11 +404,99 @@ img.areal-third {
     right: 0;
 }
 
+/* Areal animation*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    bottom: 211px;
+    left: 32px;
+    visibility: hidden;
+    width: 600px;
+    background-color: #9d877c;
+    color: #c1cbdc;
+    font-size: 18px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    line-height: 1.2;
+    text-align: left;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+    
+}
+
+.map-wrapper {
+    position: relative;
+}
+
+.blob {
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    transform: scale(1);
+    animation: pulse-black 2s infinite;
+    background: rgba(255, 82, 82, 1);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+    animation: pulse-red 2s infinite;
+}
+
+.blob_1 {
+    bottom: 23%;
+    left: 34%;
+}
+.blob_2 {
+    top: 72%;
+    left: 13%;
+}
+.blob_3 {
+    top: 48%;
+    left: 13%;
+}
+  
+  @keyframes pulse-red {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+  }
+
+
 /* Main pahe styles*/
 
 .main-page {
     background-image: url(../assets/images/gallery/gradient-bg.png);
-    padding: 0;;
+    padding: 0;
 }
 
 .main-page-bottom-wrapper {
