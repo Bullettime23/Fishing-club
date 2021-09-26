@@ -514,3 +514,67 @@ img.areal-third {
 .contacts-map-wrapper {
     margin-top: 40px;
 }
+
+/*  About page styles   */
+
+.about-page {
+    background-image: url(../assets/images/about/about-bg.png);
+    padding: 0 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-page * {
+    text-align: center;
+    color: rgb(102, 89, 82);
+
+}
+
+.about-page-top-wrapper {
+    padding-top: 25px;
+}
+
+/* .about-page-top-wrapper h1 {
+    color: rgb(102, 89, 82);
+} */
+
+.about-page-top-wrapper img {
+    margin-top: 24px;
+}
+
+.about-page-top-wrapper h1:last-child {
+    margin-top: 30px;
+}
+
+.about-page-under-wrapper {
+    display: flex;
+    margin-top: 50px;
+}
+
+.about-right-col, .about-left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-page-under-wrapper div h2 {
+    font-size: 30px;
+    font-family: "v_CCMeanwhile";
+    color: rgb(102, 89, 82);
+    line-height: 1.2;
+}  
+
+.about-page-under-wrapper div img {
+    margin-top: 22px;
+}
+
+.about-page-under-wrapper div p {
+    margin-top: 36px;
+    width: 70%;
+    font-size: 30px;
+    font-family: "Arial";
+    color: rgb(102, 89, 82);
+    line-height: 1.2;
+}
+  
