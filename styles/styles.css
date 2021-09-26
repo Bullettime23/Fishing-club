@@ -269,7 +269,7 @@ footer {
 
 .footer-mid-wrapper {
     display: flex;
-    align-self: end;
+    align-self: flex-end;
 }
 
 .footer-mid-wrapper div {
@@ -284,7 +284,7 @@ footer {
 
 .footer-right-wrapper {
     display: flex;
-    align-self: end;
+    align-self: flex-end;
     flex-direction: column;
     padding-bottom: 25px;
 }
