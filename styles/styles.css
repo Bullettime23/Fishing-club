@@ -27,7 +27,7 @@ a {
 
 a:hover, a:hover *  {
     color: #97cceb !important;
-    text-shadow: 2px 0 0 rgb(232, 239, 250);
+    text-shadow: 0 1px 1px black;
     transition-duration: 0.5s;
 }
 
