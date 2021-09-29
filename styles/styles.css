@@ -81,6 +81,8 @@ h4 a:active {
 .nav {
     display: flex;
     justify-self: center;
+    position: relative;
+    z-index: 1;
 }
 
 .nav a {
@@ -323,7 +325,7 @@ footer {
 
 .footer-mid-wrapper {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .footer-mid-wrapper div {
@@ -338,7 +340,7 @@ footer {
 
 .footer-right-wrapper {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
     flex-direction: column;
     padding-bottom: 25px;
 }
@@ -355,8 +357,9 @@ footer {
 
 /* Gallry styles*/
 .gallery-main {
-    background-image: url(../assets/images/gallery/gradient-bg.png);
+    padding-bottom: 300px;
 }
+
 .gallery-top-wrapper {
     padding-top: 70px;
     color: #665952;
@@ -637,7 +640,7 @@ img.areal-third {
 /* contacts page styles */
 
 .contacts-page {
-    background-image: url(../assets/images/gallery/gradient-bg.png);
+    padding-bottom: 300px;
 }
 
 .contacts-top-wrapper {
@@ -659,12 +662,11 @@ img.areal-third {
 .contacts-middle-wrapper {
     margin-top: 140px;
     display: flex;
+    justify-content: space-between;
 }
 
 .contacts-left-col {
     background-color: #f5f7fa;
-    height: 280px;
-    width: 560px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -685,7 +687,6 @@ img.areal-third {
 }
 
 .contacts-right-col input {
-    width: 288px;
     background-color: rgb(245, 247, 250);
     height: 59px;
     font-size: 30px;
@@ -706,6 +707,10 @@ img.areal-third {
 
 .contacts-map-wrapper {
     margin-top: 40px;
+}
+
+.contacts-map-wrapper img {
+    width: 100%;
 }
 
 /*  About page styles   */
@@ -823,8 +828,47 @@ img.areal-third {
     }
 
     /* areal*/
+    .areal-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-wrapper {
+        padding-top: 30px;
+    }
     .areal-mid {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .areal-mid .areal-left-col {
+        align-self: inherit;
+    }
+
+    /*Gallery*/
+    .gallery-middle-photo-wrapper, .gallery-top-photo-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-top-photo-wrapper img:last-child, .gallery-right-col {
+        padding-top: 26px;
+    }
+
+    /* contacts */
+
+    .contacts-middle-wrapper {
+        flex-direction: column;
+    }
+
+    .contacts-right-col {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    .contacts-right-col input,
+    .contacts-left-col {
+        width: auto;
     }
 }
 
@@ -839,6 +883,10 @@ img.areal-third {
 
     footer h4 {
         font-size: 2.2rem;
+    }
+    
+    .footer-right-wrapper {
+        align-self: flex-end;
     }
 
     h2 {
