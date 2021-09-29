@@ -15,7 +15,6 @@ html {
     justify-content: center;
 }
 body {
-    width: 1100px;
     text-align: center;
     position: relative;
 }
@@ -33,7 +32,7 @@ a:hover, a:hover *  {
 
 header {
     width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,8 +42,8 @@ header {
 
 .logo {
     position: absolute;
-    left: 105px;
-    top: 5px;
+    left: 7%;
+    height: 86%;
 }
 
 h1 {
@@ -80,7 +79,7 @@ h4 a:active {
 
 .nav {
     display: flex;
-
+    justify-self: center;
 }
 
 .nav a {
@@ -98,33 +97,70 @@ h4 a:active {
 }
 
 main {
-    height: 1600px;
-    background-image: url(../assets/images/background.png);
-    background-repeat: no-repeat;
-    padding: 0 85px;
+    background: rgb(177,217,239);
+    background: linear-gradient(180deg, rgba(177,217,239,1) 0%, rgba(229,239,250,1) 100%);
+    overflow: hidden;
+}
+
+main>div {
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
 }
 
 .top-wrapper {
+    padding: 0;
+}
+
+.top-upper {
+    margin-right: 9%;
+    padding: 0 7%;
     padding-top: 65px;
-    padding-left: 64%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.top-wrapper h1 {
-    margin-bottom: 45px;
-}
-
-.top-wrapper .info {
+.top-upper .info {
     margin-left: 84px;
 }
 
-.top-wrapper .info span {
+.top-upper .info h1 {
+    margin-bottom: 45px;
+}
+
+.top-upper .info span {
     padding-right: 30px;
 }
 
+.top-under {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+.top-sail-fish {
+    position: absolute;
+    width: 54%;
+    z-index: 1;
+    left: 4%;
+    bottom: 31%;
+}
+
+.top-foam {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
 .middle-wrapper {
-    margin-top: 205px;
+    margin-top: -80px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    background-color: #e3ebf5;
+    box-shadow: 0 0 21px 30px #e3ebf5;
+    
 }
 
 .left-column h1 {
@@ -179,68 +215,79 @@ main {
 .bottom-wrapper {
     margin-top: 100px;
     position: relative;
+    background-image: url("../assets/images/sail/fish-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bottom-wrapper * {
     color: #665952;
 }
 
-.bottom-wrapper p {
+.food-info p {
     margin-top: 30px;
     width: 18%;
 }
 
 .food-wrapper {
-    position: absolute;
+    position: relative;
+    padding-bottom: 260px;
     left: 20%;
     top: 77%;
-    height: 200px;
-    width: 200px;
+    height: 315px;
+    width: auto;
 }
 
 .food-wrapper img, .food-wrapper p {
-    position: absolute
+    position: absolute;
+}
+
+.food-wrapper img {
+    width: 10%;
 }
 
 .sard {
-    bottom: 106px;
-    right: 100px;
+    top: -4%;
+    left: -3%;
 }
 
 .sard-text {
-    top: 53px;
-    right: 226px;
+    
+    left: -5%;
+    top: 24%;
 }
 
 .anch {
-    bottom: 91px;
-    left: 147px;
+    left: 16%;
 }
 
 .anch-text {
-    left: 252px;
-    top: 74px;
+    left: 27%;
+    top: 22%;
 }
 
 .scumb {
-    bottom: 4px;
-    left: 59px;
+    top: 27%;
+    left: 5%;
 }
 
 .scumb-text {
-    top: 151px;
-    left: 170px;
+    top: 46%;
+    left: 16%;
 }
 
 
 footer {
-    position: absolute;
+    position: relative;
+    z-index: 1;
+    margin-top: -240px;
+    height:  364px;
     display: flex;
     justify-content: space-around;
-    top: 89%;
     width: 100%;
-    height: 217px;
     background-image: url("../assets/images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer h4 {
@@ -265,6 +312,11 @@ footer {
 
 .footer-left-wrapper p {
     padding-left: 20px;
+}
+.footer-logo {    
+    object-fit: contain;
+    width: 40%;
+
 }
 
 .footer-mid-wrapper {
@@ -691,5 +743,60 @@ img.areal-third {
     font-family: "Arial";
     color: rgb(102, 89, 82);
     line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: flex-end;
+    }
+
+    .middle-wrapper {
+        flex-direction: column;
+    }
+
+    .middle-wrapper .right-column {
+        padding-top: 60px;
+    }
+
+    .food-wrapper {
+        left: 43%;
+    }
+
+    .food-wrapper img {
+        width: 18%;
+    }
+
+    .footer-mid-wrapper {
+        align-self: flex-end;
+        align-items: flex-start;
+        flex-direction: column;        
+    }
+
+    .footer-mid-wrapper div {
+        text-align: start;
+    }
+
+    .footer-right-wrapper {
+        align-self: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    p, a, h4 {
+        font-size: 1.8rem;
+    }
+
+    .nav a {
+        font-size: 2.5rem;
+    }
+
+    footer h4 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    
 }
   
