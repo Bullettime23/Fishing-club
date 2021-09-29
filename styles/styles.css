@@ -15,8 +15,9 @@ html {
     justify-content: center;
 }
 body {
-    text-align: center;
-    position: relative;
+    /* text-align: center;
+    position: relative; */
+    width: 100%;
 }
 
 a {
@@ -547,14 +548,29 @@ img.areal-third {
 /* Main pahe styles*/
 
 .main-page {
-    background-image: url(../assets/images/gallery/gradient-bg.png);
+    background: rgb(177,217,239);
+    background: linear-gradient(180deg, rgba(177,217,239,1) 0%, rgba(229,239,250,1) 100%);
     padding: 0;
+}
+
+.main-page-top {
+    padding: 0;
+}
+
+.main-page-top img {
+    width: 100%;
 }
 
 .main-page-bottom-wrapper {
     display: flex;
     justify-content: center;
     padding-top: 80px;
+    padding-bottom: 300px;
+}
+
+.main-page-bottom-wrapper > div {
+    width: min-content;
+
 }
 
 .main-left-col {
@@ -778,6 +794,21 @@ img.areal-third {
 
     .footer-right-wrapper {
         align-self: center;
+    }
+
+    /* Main page */
+    .main-page-bottom-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-middle-col, .main-right-col {
+        margin-top: 30px;
+        padding-left: 0;
+    }
+
+    .main-middle-col img {
+        width: 305px;
     }
 }
 
